@@ -9,7 +9,7 @@ function loadAllRecords() {
 
   request.onupgradeneeded = function (event) {
     var db = event.target.result;
-    db.createObjectStore("budgetRecords", { keyPath: "id", autoincrement: true });
+    db.createObjectStore("budgetRecords", { keyPath: "id", autoIncrement: true });
   };
 
   request.onerror = function (event) {
